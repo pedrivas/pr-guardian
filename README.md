@@ -1,31 +1,31 @@
 # PR Guardian
 
-Projeto de aprendizado prático em **AI Product Engineering**: um assistente de IA
-que analisa Pull Requests e devolve uma revisão estruturada (bugs, riscos de
-segurança, problemas de arquitetura, estilo).
+Hands-on learning project in **AI Product Engineering**: an AI assistant
+that analyzes Pull Requests and returns a structured review (bugs, security
+risks, architecture issues, style).
 
-Stack: Java 17 + Spring Boot (backend), React (frontend, futuro).
+Stack: Java 21 + Spring Boot (backend), React (frontend, future).
 
-O projeto é construído em níveis crescentes de maturidade, documentados em
+The project is built in increasing levels of maturity, documented in
 [`docs/AI_Product_Engineer_Handbook.md`](docs/AI_Product_Engineer_Handbook.md):
 
-- [ ] **V1 — Naive**: prompt solto, sem estrutura, sem guardrails
-- [ ] **V2 — Guardrails**: JSON Schema, validação, retry
-- [ ] **V3 — Evals**: golden dataset, métricas, CI
-- [ ] **V4 — Agent**: ferramentas (buscar arquivos, análise estática)
-- [ ] **V5 — Product**: métricas de uso, feature flags, feedback loop
+- [ ] **V1 — Naive**: loose prompt, no structure, no guardrails
+- [ ] **V2 — Guardrails**: JSON Schema, validation, retry
+- [ ] **V3 — Evals**: golden dataset, metrics, CI
+- [ ] **V4 — Agent**: tools (file search, static analysis)
+- [ ] **V5 — Product**: usage metrics, feature flags, feedback loop
 - [ ] **V6 — Docs**: ADRs, post-mortem, RFC
 
-## Estrutura
+## Structure
 
 ```
-src/main/java/com/prguardian/          # aplicação Spring Boot
-prompts/pr_guardian/                   # prompts versionados (v1.xml, active_version.txt)
-docs/AI_Product_Engineer_Handbook.md   # handbook vivo do aprendizado
-PROMPT_CHANGELOG.md                    # histórico de mudanças de prompt
+src/main/java/com/prguardian/          # Spring Boot application
+prompts/pr_guardian/                   # versioned prompts (v1.xml, active_version.txt)
+docs/AI_Product_Engineer_Handbook.md   # living learning handbook
+PROMPT_CHANGELOG.md                    # prompt change history
 ```
 
-## Rodando localmente
+## Running locally
 
 ```bash
 export ANTHROPIC_API_KEY=sk-ant-...
