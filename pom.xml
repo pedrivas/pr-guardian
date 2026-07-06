@@ -22,7 +22,7 @@
     </properties>
 
     <dependencies>
-        <!-- Web + Jackson (JSON) de graça -->
+        <!-- Web + Jackson (JSON) for free -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
